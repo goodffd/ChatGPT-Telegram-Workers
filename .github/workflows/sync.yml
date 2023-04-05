@@ -27,8 +27,7 @@ jobs:
             git config --local user.email $USER_EMAIL
             git pull --unshallow
             git remote add upstream https://github.com/TBXark/ChatGPT-Telegram-Workers.git
-            git add -A
-            git commit -a -m "Configuration Files Generated on [$DATE_TIME]"
+            git push origin master
             git fetch upstream
             git checkout master
             git merge --no-edit upstream/master
