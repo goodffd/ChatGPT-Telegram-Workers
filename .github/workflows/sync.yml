@@ -10,6 +10,8 @@ jobs:
         steps:
         - name: 'Checking'
           uses: actions/checkout@v3
+          with:
+            token: ${{ secrets.COMMIT_SECRET }}
           
         - name: 'Sync fork'
 #          uses: repo-sync/github-sync@v2
